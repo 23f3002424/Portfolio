@@ -1,11 +1,9 @@
 name: email-check
-
-on:
-  workflow_dispatch:
+on: [workflow_dispatch] # This allows you to run it manually
 
 jobs:
-  check:
+  check-email:
     runs-on: ubuntu-latest
     steps:
       - name: 23f3002424@ds.study.iitm.ac.in
-        run: echo "email step detected"
+        run: echo "Verified email step"
